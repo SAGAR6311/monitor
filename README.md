@@ -55,7 +55,7 @@ You need [Node.js 18+](https://nodejs.org) and a free [Cloudflare account](https
 (email only).
 
 ```sh
-git clone https://github.com/<you>/monitor.git
+git clone https://github.com/SAGAR6311/monitor.git
 cd monitor/cloudflare
 ./deploy.sh
 ```
