@@ -7,7 +7,7 @@ the page and the steps that led to it. You get a phone alert the moment somethin
 
 Runs on **Cloudflare's free plan** (no server, no domain, no credit card), or on any machine with Python.
 
-![Monitor dashboard](docs/dashboard.png)
+![Monitor demo: a new error arrives live, opens with stack trace and breadcrumbs, then gets resolved](docs/demo.gif)
 
 <table>
   <tr>
@@ -322,3 +322,5 @@ sending changes, and keep both servers' APIs in sync (`server.py` and `cloudflar
 ## License
 
 [MIT](LICENSE)
+
+<sub>Sentry is a trademark of Functional Software, Inc. Monitor is an independent project and is not affiliated with, endorsed by, or sponsored by Sentry. The name is used only to describe compatibility and to compare.</sub>
