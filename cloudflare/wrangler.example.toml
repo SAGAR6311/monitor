@@ -1,0 +1,18 @@
+# Template. deploy.sh copies this to wrangler.toml (your own copy, not committed) on first run.
+name = "monitor"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# Dashboard page (deploy.sh copies ../dashboard.html here as index.html)
+assets = { directory = "./public" }
+
+[vars]
+# Names for project ids used in DSNs
+MONITOR_PROJECTS = "1=web,2=mobile,3=backend"
+# Optional: your email, for alerts via resend.com (set RESEND_API_KEY with: npx wrangler secret put RESEND_API_KEY)
+ALERT_EMAIL = ""
+
+[[d1_databases]]
+binding = "DB"
+database_name = "monitor"
+database_id = "REPLACE_WITH_DATABASE_ID"
